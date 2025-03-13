@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="aplicarEstilo()">Aplicar Estilo</button>
+    <button onclick="dizerOla()"> Diga Ola! </button>
+    <button onclick="aumentarFonte()"> Aumentar Fonte </button>
+    <button onclick="reduzirFonte()"> Reduzir Fonte </button>
+    <button onclick="aplicarRoxo()">Aplicar cor Purple</button>
+    <button onclick="aplicarAzul()">Aplicar cor blue</button>
+    <button onclick="aplicarBranco()">Aplicar cor white</button>
+    <button onclick="aplicarMargens()" >Aplicar margens</button>
+    <button onclick="reduzirMargens()">Reduzir mangens</button>
+
+    <h1>Etec Sales Gomes</h1>
+
+    <script>
+
+        let font_size = 12;
+        let margin_size = 12;
+        let titulo = document.querySelector('h1');
+         
+        
+        function aumentarMargen(){
+            margin_size++;
+            titulo.style.marginTop = margin_size + 'px';
+            titulo.style.marginLeft = margin_size + 'px';
+        }
+        function aplicarRoxo(){
+            titulo.style.color = 'purple';
+
+        }
+        function aplicarAzul(){
+            titulo.style.color = 'blue';
+            
+        }
+        function aplicarBranco(){
+            titulo.style.color = 'white';
+            
+        }
+
+        function aumentarFonte(){
+            font_size++;
+            titulo.style.fontSize = font_size + 'px';
+          
+        }
+
+        function reduzirFonte(){
+            font_size--;
+            titulo.style.fontSize = font_size + 'px';
+           
+        }
+        function dizerOla(){
+            alert('Olaaaa');
+        }
+
+
+        function aplicarEstilo(){
+            
+          document.body.style.backgroundColor = 'gray';
+           let titulo = document.querySelector('h1');
+           titulo.style.backgroundColor = 'pink';
+
+           titulo.style.fontSize = '64px';
+           titulo.style.fontFamily = 'Arial';
+           titulo.style.marginTop = '100px';
+           
+        }
+   
+    </script>
+</body>
+</html>
