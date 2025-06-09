@@ -1,0 +1,22 @@
+<script>
+ let telefone = prompt("Digite o número de telefone (apenas números):");
+
+
+  telefone = telefone.trim(); // Remove espaços em branco
+
+
+  let apenasNumeros = /^[0-9]+$/.test(telefone);
+
+if (telefone.length < 10 || telefone.length > 10) {
+
+    console.log("Número inválido: pelo menos 10 dígitos.");
+}
+else if (!apenasNumeros) {
+
+    console.log("Número inválido: deve conter apenas números, sem letras ou caracteres especiais.");
+} 
+else {
+    console.log("Número válido: " + telefone);
+}
+
+</script>

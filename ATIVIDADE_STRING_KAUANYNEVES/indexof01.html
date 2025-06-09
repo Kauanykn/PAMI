@@ -1,0 +1,26 @@
+<script>
+    let palavra = "escola";  
+    let erros = 0;
+    let maximo = 3;
+
+  while (erros < maximo) {
+  let letra = prompt("Digite uma letra:");
+
+  if (palavra.indexOf(letra) !== -1) {
+   alert(" A letra " + letra + " existe na palavra.");
+  } 
+  
+  else {
+   alert(" A letra " + letra + " não existe.");
+    erros++;
+  }
+
+  if (erros === maximo) {
+   alert("Você perdeu! Fim de jogo.");
+  alert("A palavra era: " + palavra);
+  }
+
+}
+
+
+</script>
