@@ -1,0 +1,90 @@
+<script>
+    const veiculos = [
+  {
+    nome: "Fusca",
+    ano: 1975,
+    preco: 20000,
+    modelo: "Clássico",
+    tipoCombustivel: "Gasolina"
+  },
+  {
+    nome: "Gol",
+    ano: 2010,
+    preco: 30000,
+    modelo: "G4",
+    tipoCombustivel: "Álcool"
+  },
+  {
+    nome: "Civic",
+    ano: 2021,
+    preco: 120000,
+    modelo: "EXL",
+    tipoCombustivel: "Gasolina"
+  },
+  {
+    nome: "Onix",
+    ano: 2019,
+    preco: 45000,
+    modelo: "LTZ",
+    tipoCombustivel: "Flex"
+  },
+  {
+    nome: "Hilux",
+    ano: 2022,
+    preco: 200000,
+    modelo: "SRX",
+    tipoCombustivel: "Diesel"
+  },
+  {
+    nome: "Chevette",
+    ano: 1983,
+    preco: 15000,
+    modelo: "Standard",
+    tipoCombustivel: "Gasolina"
+  },
+  {
+    nome: "Kwid",
+    ano: 2020,
+    preco: 40000,
+    modelo: "Intense",
+    tipoCombustivel: "Flex"
+  },
+  {
+    nome: "Porsche 911",
+    ano: 2025,
+    preco: 800000,
+    modelo: "Turbo S",
+    tipoCombustivel: "Gasolina"
+  },
+  {
+    nome: "Tesla Model 3",
+    ano: 2023,
+    preco: 300000,
+    modelo: "Long Range",
+    tipoCombustivel: "Elétrico"
+  },
+  {
+    nome: "Renegade",
+    ano: 2021,
+    preco: 110000,
+    modelo: "Longitude",
+    tipoCombustivel: "Flex"
+  }
+];
+
+let veiculos_seminovos = veiculos.filter(veiculos => veiculos.ano > 2000 && veiculos.ano <= 2024);
+let veiculos_novos = veiculos.filter(veiculos => veiculos.ano >= 2025);
+let veiculos_classicos = veiculos.filter(veiculos => veiculos.ano <= 2000);
+let veiculos_gasolina = veiculos.filter(veiculos => veiculos.tipoCombustivel == "Gasolina");
+let veiculo_baixo_valor = veiculos.filter(veiculos => veiculos.preco <= 30000);
+
+
+console.log(veiculos_seminovos);
+console.log(veiculos_novos);
+console.log(veiculos_classicos);
+console.log(veiculos_gasolina);
+console.log(veiculo_baixo_valor);
+
+
+
+</script>
